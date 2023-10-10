@@ -80,11 +80,11 @@ class PersistencePassenger:
 
 
 
-file_name = r'E:\Alternance\Alternance_SRD\Series_Times\datasets_airline_passengers.csv'
-a = PersistencePassenger(file_name, nb_lagged=1)
-a.structure_data()
-a.analyse()
-a.data_lagged()
-a.split_train_test()
-a.predictions()
-a.plot_predictions()
+file_name = 'datasets_airline_passengers.csv'
+passengers = PersistencePassenger(file_name, nb_lagged=1)
+passengers.structure_data()
+passengers.analyse()
+passengers.data_lagged()
+passengers.split_train_test()
+passengers.predictions()
+passengers.plot_predictions()
